@@ -1,0 +1,8 @@
+README.md
+setup.py
+salary_prediction_project.egg-info/PKG-INFO
+salary_prediction_project.egg-info/SOURCES.txt
+salary_prediction_project.egg-info/dependency_links.txt
+salary_prediction_project.egg-info/requires.txt
+salary_prediction_project.egg-info/top_level.txt
+src/__init__.py
