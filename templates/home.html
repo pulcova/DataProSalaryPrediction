@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Salary Prediction</title>
+</head>
+<body>
+    <h2>Enter Details for Salary Prediction</h2>
+    <form action="{{ url_for('predict_datapoint')}}" method="POST">
+        <label for="sex">Sex:</label>
+        <select id="sex" name="sex">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+        </select><br><br>
+
+        <label for="designation">Designation:</label>
+        <select id="designation" name="designation">
+            <option value="Analyst">Analyst</option>
+            <option value="Senior Analyst">Senior Analyst</option>
+            <option value="Associate">Associate</option>
+            <option value="Manager">Manager</option>
+            <option value="Senior Manager">Senior Manager</option>
+            <option value="Director">Director</option>
+        </select><br><br>
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" min='15' max='80'><br><br>
+
+        <label for="unit">Unit:</label>
+        <select id="unit" name="unit">
+            <option value="IT">IT</option>
+            <option value="Finance">Finance</option>
+            <option value="Operations">Operations</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Web">Web</option>
+            <option value="Management">Management</option>
+        </select><br><br>
+
+        <label for="ratings">Ratings:</label>
+        <input type="text" id="ratings" name="ratings" min='1' max='5'><br><br>
+
+        <label for="past_experience">Past Experience:</label>
+        <input type="text" id="past_experience" name="past_experience" min='0' max='30'><br><br>
+
+        <input type="submit" value="Predict Salary">
+    </form>
+    <h2>
+        THE  prediction is {{results}}
+     </h2>
+</body>
+</html>
